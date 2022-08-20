@@ -1,0 +1,37 @@
+.switch {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+}
+
+.switch input {
+  display: none;
+}
+.switch label * {
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: white;
+  font-size: 1.7em;
+  transition: 0.3s ease-in-out;
+}
+
+/* light mood */
+.switch .moon {
+  opacity: 0;
+  transform: scale(0);
+}
+.switch .sun {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* dark mood */
+.switch input:checked + label .moon {
+  opacity: 1;
+  transform: scale(1);
+}
+.switch input:checked + label .sun {
+  opacity: 0;
+  transform: scale(0);
+}

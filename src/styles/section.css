@@ -1,0 +1,14 @@
+section {
+  width: 250px;
+  text-align: left;
+  margin: 20px auto;
+}
+
+section h2 {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+section p {
+  font-size: 10px;
+}
